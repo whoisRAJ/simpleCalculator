@@ -1,0 +1,161 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+} */
+
+/* .App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+} */
+
+/* /* .App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+} */
+#root{
+  background: black;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+} 
+
+.calculator--container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 400px;
+  background: black;
+}
+
+.screen--container{
+  flex: 0.5;
+  flex: 0.5 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.screen-bottom, .screen-top {
+  text-align: right;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.screen-top{
+  flex: 1;
+  font-size: 40px;
+  width: 80%;
+  align-self: flex-end;
+}
+
+.screen-bottom{
+  flex: 1;
+  font-size: 200px;
+  width: 80%;
+  align-self: flex-end;
+}
+
+.keypad{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.block{
+  flex: 1;
+  display: flex;
+}
+
+.btn{
+  /* flex: 2 1;
+  border-radius: 90%/80%;
+  margin: 5px;
+  border: none;
+  background: #f8f8f8;
+  box-shadow: rgb(255, 255, 255);
+  color: #01f5fd;
+  font-size: 45px;
+  outline: none;
+  cursor: pointer; */
+  height: 90px;
+  width: 90px;
+  margin: 5px;
+  background-color: #f8f8f8;
+  color: #01f5fd;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 45px;
+}
+
+.btn--equal{
+  height: 90px;
+  width: 190px;
+  border-radius: 47%;
+  display: inline-block;
+  background: #01f5fd;
+  color: white;
+  font-size: 45px;
+}
+
+.btn--blue{
+  background: #01f5fd;
+  color: white;
+  font-size: 45px;
+}
+
+.btn--white{
+  background: rgb(247, 248, 248);
+  color:#01f5fd ;
+  font-size: 45px;
+   
+}
+
+
+@media all and (max-width: 530px) {
+  .btn {
+    font-size: 32px;
+  }
+
+  .calculator--container{
+    width: 420px;
+  }
+
+  .btn--equal{
+    padding-left: 40px
+  }
+
+  .keypad{
+    flex: 0.5 0.5;
+  }
+}
+
+@media all and (max-width: 420px) {
+  .btn {
+    font-size: 25px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .calculator--container{
+    /* height: 70vh; */
+    width: 315px;
+  }
+}
