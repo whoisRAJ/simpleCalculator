@@ -1,5 +1,8 @@
 import * as types from '../types';
 
+
+//in redux these are called as action where inside return TYPE  keyword is given. which shows its a action in this application
+
 export const calculate = (key) => {
   return {
     type: types.SET_EXPRESSION,
